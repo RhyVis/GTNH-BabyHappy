@@ -8,7 +8,8 @@ import com.google.common.io.Files;
 @SuppressWarnings({ "UnstableApiUsage" })
 public enum TargetedMod {
 
-    GTPP("miscutils", "GT-PlusPlus");
+    GTPP("miscutils", "GT-PlusPlus"),
+    AE("appliedenergistics2", "Applied-Energistics");
 
     public final String modName;
     public final String jarNamePrefixLowercase;

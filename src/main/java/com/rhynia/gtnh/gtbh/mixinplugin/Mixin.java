@@ -1,11 +1,14 @@
 package com.rhynia.gtnh.gtbh.mixinplugin;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 public enum Mixin {
 
-    GTPPMegaABSMixin("gtpp.MegaABSMixin", TargetedMod.GTPP);
+    GTPPMegaABSMixin("gtpp.MegaABSMixin", TargetedMod.GTPP),
+    GTPP9in1Mixin("gtpp.IndustrialMultiMixin", TargetedMod.GTPP),
+    AECellTypeMixin("ae.AEMixin", TargetedMod.AE);
 
     public final String mixinClass;
     public final List<TargetedMod> targetedMods;
@@ -16,7 +19,7 @@ public enum Mixin {
     }
 
     public boolean shouldLoad(List<TargetedMod> loadedMods) {
-        return loadedMods.containsAll(this.targetedMods);
+        return new HashSet<>(loadedMods).containsAll(this.targetedMods);
     }
 
 }

@@ -18,7 +18,7 @@ public class MegaABSMixin {
     /**
      * Modify coil discount to be 5% faster each coil, in pow calculation.
      *
-     * @since 0.1.0
+     * @since 1.0.0
      */
     @Inject(method = "getCoilDiscount", at = @At("HEAD"), cancellable = true)
     private void bh$getCoilDiscount(@NotNull HeatingCoilLevel lvl, @NotNull CallbackInfoReturnable<Double> cir) {
@@ -28,7 +28,7 @@ public class MegaABSMixin {
     /**
      * Modify parallel limit to 1024.
      *
-     * @since 0.1.0
+     * @since 1.0.0
      */
     @ModifyConstant(method = "createProcessingLogic", constant = @Constant(intValue = 256))
     private int bh$parallelModify(int parallel) {
