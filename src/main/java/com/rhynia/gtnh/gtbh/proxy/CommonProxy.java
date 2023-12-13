@@ -2,6 +2,7 @@ package com.rhynia.gtnh.gtbh.proxy;
 
 import com.rhynia.gtnh.gtbh.GTBH;
 import com.rhynia.gtnh.gtbh.Tags;
+
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;

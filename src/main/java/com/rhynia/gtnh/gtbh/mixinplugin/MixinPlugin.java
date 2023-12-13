@@ -1,12 +1,6 @@
 package com.rhynia.gtnh.gtbh.mixinplugin;
 
-import com.gtnewhorizon.gtnhmixins.MinecraftURLClassPath;
-import net.minecraft.launchwrapper.Launch;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.spongepowered.asm.lib.tree.ClassNode;
-import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
-import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
+import static java.nio.file.Files.walk;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,7 +12,15 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import static java.nio.file.Files.walk;
+import net.minecraft.launchwrapper.Launch;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.spongepowered.asm.lib.tree.ClassNode;
+import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
+import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
+
+import com.gtnewhorizon.gtnhmixins.MinecraftURLClassPath;
 
 public class MixinPlugin implements IMixinConfigPlugin {
 

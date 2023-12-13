@@ -1,9 +1,9 @@
 package com.rhynia.gtnh.gtbh.mixinplugin;
 
-import com.google.common.io.Files;
-
 import java.nio.file.Path;
 import java.util.Locale;
+
+import com.google.common.io.Files;
 
 @SuppressWarnings({ "UnstableApiUsage" })
 public enum TargetedMod {
