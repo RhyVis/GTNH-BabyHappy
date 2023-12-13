@@ -21,6 +21,11 @@ public class AEMixin {
     @Final
     protected int totalTypes;
 
+    /**
+     * Increase Quantum Cell to storage 63 types of item.
+     *
+     * @since 1.0.1
+     */
     @Inject(method = "<init>", at = @At("RETURN"))
     public void bh$ItemExtremeStorageCell(String name, long bytes, int types, int perType, double drain,
         CallbackInfo ci) {
