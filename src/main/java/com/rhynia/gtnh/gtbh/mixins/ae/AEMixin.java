@@ -12,7 +12,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import appeng.items.storage.ItemExtremeStorageCell;
 
-@SuppressWarnings("UnusedMixin")
 @Mixin(value = ItemExtremeStorageCell.class, priority = 2000, remap = false)
 public class AEMixin {
 

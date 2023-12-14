@@ -11,7 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import gregtech.api.enums.HeatingCoilLevel;
 import gtPlusPlus.xmod.gregtech.common.tileentities.machines.multi.production.mega.GregTechMetaTileEntity_MegaAlloyBlastSmelter;
 
-@SuppressWarnings("UnusedMixin")
 @Mixin(value = GregTechMetaTileEntity_MegaAlloyBlastSmelter.class, priority = 2000, remap = false)
 public class MegaABSMixin {
 

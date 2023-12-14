@@ -7,7 +7,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import gtPlusPlus.xmod.gregtech.common.tileentities.machines.multi.processing.GregtechMetaTileEntity_IndustrialMultiMachine;
 
-@SuppressWarnings("UnusedMixin")
 @Mixin(value = GregtechMetaTileEntity_IndustrialMultiMachine.class, priority = 2000, remap = false)
 public class IndustrialMultiMixin {
 
