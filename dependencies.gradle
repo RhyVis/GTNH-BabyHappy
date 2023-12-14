@@ -35,4 +35,5 @@
  */
 dependencies {
     implementation('com.github.GTNewHorizons:GTplusplus:1.10.26:dev')
+    implementation('com.github.GTNewHorizons:Applied-Energistics-2-Unofficial:rv3-beta-279-GTNH:dev')
 }
