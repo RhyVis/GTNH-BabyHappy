@@ -4,7 +4,7 @@ It's a mod making GTNH too easy. If you dislike it, you should forgive me and cl
 ### Current Modifications
 * Mega ABS (GTPP): Increase max parallel to 1024, increase coil discount.
 * 9 in 1 (GTPP): Increase max parallel to 8 per voltage.
-* Elemental Duplicator (): Increase max parallel to 32 per voltage, speed +200%.
+* Elemental Duplicator (GTPP): Increase max parallel to 32 per voltage, speed +200%.
 * Quantum Storage Cell (AE2): Increase Quantum Storage Cell to storage 63 types of item.
 
 If some of the modifications are not disired, just remove it from `"mixins": []` in the file "mixins.gtbh.json".
