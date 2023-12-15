@@ -12,10 +12,11 @@ public class ElementalDuplicatorStructureMixin {
 
     /**
      * Structure check always return true.
+     * Will not be added to mixin config by default.
      *
      * @since 1.0.2
      */
-    @Inject(method = "checkMachine", at = @At("RETURN"), cancellable = true)
+    @Inject(method = "checkMachine", at = @At("HEAD"), cancellable = true)
     private void bh$parallelModify(CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(true);
     }
