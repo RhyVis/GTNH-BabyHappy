@@ -7,4 +7,4 @@ It's a mod making GTNH too easy. If you dislike it, you should forgive me and cl
 * Elemental Duplicator (GTPP): Increase max parallel to 32 per voltage, speed +200%.
 * Quantum Storage Cell (AE2): Increase Quantum Storage Cell to storage 63 types of item.
 
-If some of the modifications are not disired, just remove it from `"mixins": []` in the file "mixins.gtbh.json".
+If some of the modifications are not desired, just remove it from `"mixins": []` in the file "mixins.gtbh.json".
