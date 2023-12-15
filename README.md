@@ -8,3 +8,4 @@ It's a mod making GTNH too easy. If you dislike it, you should forgive me and cl
 * Quantum Storage Cell (AE2): Increase Quantum Storage Cell to storage 63 types of item.
 
 If some of the modifications are not disired, just remove it from `"mixins": []` in the file "mixins.gtbh.json".
+There's also WIP modifiications not included in mixin list, you can add it to `"mixins": []` if you know what you'e doing.
