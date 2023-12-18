@@ -47,8 +47,11 @@ public abstract class DTPFMixin extends GT_MetaTileEntity_ExtendedPowerMultiBloc
     private double discount;
 
     /**
-     * @author d
-     * @reason d
+     * DTPF time discount.
+     *
+     * @author Rhynia
+     * @reason Fetched strange errors during inject
+     * @since 1.0.6
      */
     @Overwrite
     @Override
