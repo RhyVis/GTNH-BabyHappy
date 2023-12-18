@@ -7,7 +7,6 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "ae.AEMixin",
-    "gt.DTPFMixin",
     "gtpp.ElementalDuplicatorMixin",
     "gtpp.IndustrialMultiMixin",
     "gtpp.MegaABSMixin"
