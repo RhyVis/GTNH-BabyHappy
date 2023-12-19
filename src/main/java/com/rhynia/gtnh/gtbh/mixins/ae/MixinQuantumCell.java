@@ -21,7 +21,7 @@ public class MixinQuantumCell {
             value = "NEW",
             target = "(Ljava/lang/String;JIID)Lappeng/items/storage/ItemExtremeStorageCell;",
             ordinal = 1))
-    private ItemExtremeStorageCell bh$redirected(String name, long bytes, int types, int perType, double drain) {
+    private ItemExtremeStorageCell bh$cellQuantumTypes(String name, long bytes, int types, int perType, double drain) {
         return new ItemExtremeStorageCell("Quantum", Integer.MAX_VALUE / 16, 63, 8, 1000);
     }
 }
