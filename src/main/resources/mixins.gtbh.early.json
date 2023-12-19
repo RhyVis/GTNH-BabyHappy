@@ -5,12 +5,7 @@
   "refmap": "mixins.gtbh.refmap.json",
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_8",
-  "mixins": [
-    "ae.AEMixin",
-    "gtpp.ElementalDuplicatorMixin",
-    "gtpp.IndustrialMultiMixin",
-    "gtpp.MegaABSMixin"
-  ],
+  "mixins": [],
   "client": [],
   "server": []
 }
