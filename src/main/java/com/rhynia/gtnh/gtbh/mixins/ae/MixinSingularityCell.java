@@ -22,7 +22,8 @@ public class MixinSingularityCell {
             value = "NEW",
             target = "(Ljava/lang/String;JIID)Lappeng/items/storage/ItemExtremeStorageCell;",
             ordinal = 2))
-    private ItemExtremeStorageCell bh$cellSingularityTypes(String name, long bytes, int types, int perType, double drain) {
+    private ItemExtremeStorageCell bh$cellSingularityTypes(String name, long bytes, int types, int perType,
+        double drain) {
         return new ItemExtremeStorageCell("Singularity", Integer.MAX_VALUE / 16, 63, 8, 1000);
     }
 }
