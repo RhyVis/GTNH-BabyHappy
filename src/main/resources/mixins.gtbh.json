@@ -6,10 +6,10 @@
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "ae.AEMixin",
-    "gtpp.ElementalDuplicatorMixin",
-    "gtpp.IndustrialMultiMixin",
-    "gtpp.MegaABSMixin"
+    "ae.MixinQuantumCell",
+    "gtpp.MixinElementalDuplicator",
+    "gtpp.MixinIndustrialMulti",
+    "gtpp.MixinMegaABS"
   ],
   "client": [],
   "server": []

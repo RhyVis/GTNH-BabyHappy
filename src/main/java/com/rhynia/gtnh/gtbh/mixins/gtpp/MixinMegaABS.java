@@ -12,7 +12,7 @@ import gregtech.api.enums.HeatingCoilLevel;
 import gtPlusPlus.xmod.gregtech.common.tileentities.machines.multi.production.mega.GregTechMetaTileEntity_MegaAlloyBlastSmelter;
 
 @Mixin(value = GregTechMetaTileEntity_MegaAlloyBlastSmelter.class, priority = 2000, remap = false)
-public class MegaABSMixin {
+public class MixinMegaABS {
 
     /**
      * Modify coil discount to be 5% faster each coil, in pow calculation.

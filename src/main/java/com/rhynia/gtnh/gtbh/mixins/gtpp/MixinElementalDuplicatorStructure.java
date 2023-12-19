@@ -8,11 +8,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import gtPlusPlus.xmod.gregtech.common.tileentities.machines.multi.production.GregtechMTE_ElementalDuplicator;
 
 @Mixin(value = GregtechMTE_ElementalDuplicator.class, priority = 2000, remap = false)
-public class ElementalDuplicatorStructureMixin {
+public class MixinElementalDuplicatorStructure {
 
     /**
      * Structure check always return true.
-     * Will not be added to mixin config by default.
+     * !Not a default option!
      *
      * @since 1.0.2
      */

@@ -7,13 +7,16 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import com.llamalad7.mixinextras.injector.ModifyReturnValue;
+
+import gregtech.api.logic.ProcessingLogic;
 import gtPlusPlus.xmod.gregtech.common.tileentities.machines.multi.production.GregtechMTE_ElementalDuplicator;
 
 @Mixin(value = GregtechMTE_ElementalDuplicator.class, priority = 2000, remap = false)
-public class ElementalDuplicatorMixin {
+public class MixinElementalDuplicator {
 
     /**
-     * Modify speed to be 300% (+200%).
+     * Increase speed to 300% (+200%).
      *
      * @since 1.0.2
      */
@@ -23,13 +26,25 @@ public class ElementalDuplicatorMixin {
     }
 
     /**
+     * Decrease energy consumption to 50%.
+     *
+     * @since 1.0.7
+     */
+    @Inject(method = "createProcessingLogic", at = @At("RETURN"), cancellable = true)
+    private void bh$injectEUModifier(CallbackInfoReturnable<ProcessingLogic> cir) {
+        cir.setReturnValue(
+            cir.getReturnValue()
+                .setEuModifier(0.75F));
+    }
+
+    /**
      * Modify parallel limit to 32 each voltage.
      *
      * @since 1.0.2
      */
-    @Inject(method = "getMaxParallelRecipes", at = @At("RETURN"), cancellable = true)
-    private void bh$parallelModify(CallbackInfoReturnable<Integer> cir) {
-        cir.setReturnValue(cir.getReturnValue() * 4);
+    @ModifyReturnValue(method = "getMaxParallelRecipes", at = @At("RETURN"))
+    private int bh$getMaxParallelRecipes(int original) {
+        return original * 4;
     }
 
 }
