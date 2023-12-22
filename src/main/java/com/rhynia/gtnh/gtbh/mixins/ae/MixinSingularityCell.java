@@ -24,6 +24,6 @@ public class MixinSingularityCell {
             ordinal = 2))
     private ItemExtremeStorageCell bh$cellSingularityTypes(String name, long bytes, int types, int perType,
         double drain) {
-        return new ItemExtremeStorageCell("Singularity", Integer.MAX_VALUE / 16, 63, 8, 1000);
+        return new ItemExtremeStorageCell("Singularity", Long.MAX_VALUE / 16, 63, 4096, 15000D);
     }
 }
