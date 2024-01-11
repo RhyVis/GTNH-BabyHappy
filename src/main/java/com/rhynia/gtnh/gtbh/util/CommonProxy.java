@@ -12,8 +12,6 @@ public class CommonProxy {
 
     public void preInit(FMLPreInitializationEvent event) {
         GTBH.LOG.info(Tags.MODNAME + "initialized at version " + Tags.VERSION);
-        Config.synchronizeConfiguration(event.getSuggestedConfigurationFile());
-        GTBH.LOG.info("Config initialized");
     }
 
     public void init(FMLInitializationEvent event) {}
