@@ -10,8 +10,7 @@
     "bw.MixinCAL",
     "gtpp.MixinElementalDuplicator",
     "gtpp.MixinIndustrialMulti",
-    "gtpp.MixinMegaABS",
-    "tt.MixinEOH"
+    "gtpp.MixinMegaABS"
   ],
   "client": [],
   "server": []
