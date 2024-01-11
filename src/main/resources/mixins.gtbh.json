@@ -7,9 +7,11 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "ae.MixinQuantumCell",
+    "bw.MixinCAL",
     "gtpp.MixinElementalDuplicator",
     "gtpp.MixinIndustrialMulti",
-    "gtpp.MixinMegaABS"
+    "gtpp.MixinMegaABS",
+    "tt.MixinEOH"
   ],
   "client": [],
   "server": []

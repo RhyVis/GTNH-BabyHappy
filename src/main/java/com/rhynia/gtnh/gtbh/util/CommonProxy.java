@@ -1,4 +1,4 @@
-package com.rhynia.gtnh.gtbh.proxy;
+package com.rhynia.gtnh.gtbh.util;
 
 import com.rhynia.gtnh.gtbh.GTBH;
 import com.rhynia.gtnh.gtbh.Tags;
@@ -12,6 +12,8 @@ public class CommonProxy {
 
     public void preInit(FMLPreInitializationEvent event) {
         GTBH.LOG.info(Tags.MODNAME + "initialized at version " + Tags.VERSION);
+        Config.synchronizeConfiguration(event.getSuggestedConfigurationFile());
+        GTBH.LOG.info("Config initialized");
     }
 
     public void init(FMLInitializationEvent event) {}

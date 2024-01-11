@@ -3,7 +3,7 @@ package com.rhynia.gtnh.gtbh;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.rhynia.gtnh.gtbh.proxy.CommonProxy;
+import com.rhynia.gtnh.gtbh.util.CommonProxy;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -18,8 +18,8 @@ public class GTBH {
     public static final Logger LOG = LogManager.getLogger(Tags.MODID);
 
     @SidedProxy(
-        clientSide = "com.rhynia.gtnh.gtbh.proxy.ClientProxy",
-        serverSide = "com.rhynia.gtnh.gtbh.proxy.CommonProxy")
+        clientSide = "com.rhynia.gtnh.gtbh.util.ClientProxy",
+        serverSide = "com.rhynia.gtnh.gtbh.util.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler
