@@ -1,4 +1,4 @@
-package com.rhynia.gtnh.gtbh.mixins.gtpp;
+package com.rhynia.gtnh.gtbh.mixins.u.gtpp;
 
 import java.util.List;
 
