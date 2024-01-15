@@ -30,7 +30,7 @@ public class MixinMegaABS {
      * @since 1.0.0
      */
     @ModifyConstant(method = "createProcessingLogic", constant = @Constant(intValue = 256))
-    private int bh$parallelModify(int parallel) {
+    private int bh$parallelModify(int p) {
         return 1024;
     }
 

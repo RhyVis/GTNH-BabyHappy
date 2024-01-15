@@ -21,7 +21,7 @@ public class MixinElementalDuplicator {
      * @since 1.0.2
      */
     @ModifyConstant(method = "createProcessingLogic", constant = @Constant(floatValue = 1F / 2F))
-    private float bh$speedModify(float constant) {
+    private float bh$speedModify(float c) {
         return 1F / 3F;
     }
 
@@ -43,8 +43,8 @@ public class MixinElementalDuplicator {
      * @since 1.0.2
      */
     @ModifyReturnValue(method = "getMaxParallelRecipes", at = @At("RETURN"))
-    private int bh$getMaxParallelRecipes(int original) {
-        return original * 4;
+    private int bh$getMaxParallelRecipes(int o) {
+        return o * 4;
     }
 
 }

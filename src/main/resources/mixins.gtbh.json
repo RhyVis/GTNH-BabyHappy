@@ -11,6 +11,7 @@
     "bw.MixinVoidMiner",
     "gtpp.MixinElementalDuplicator",
     "gtpp.MixinIndustrialMulti",
+    "gtpp.MixinMacerator",
     "gtpp.MixinMegaABS"
   ],
   "client": [],

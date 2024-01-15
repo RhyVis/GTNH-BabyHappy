@@ -46,8 +46,8 @@ public class MixinIndustrialMulti {
      * @since 1.0.1
      */
     @ModifyReturnValue(method = "getMaxParallelRecipes", at = @At("RETURN"))
-    private int bh$getMaxParallelRecipes(int original) {
-        return original * 4;
+    private int bh$getMaxParallelRecipes(int o) {
+        return o * 4;
     }
 
     /**
