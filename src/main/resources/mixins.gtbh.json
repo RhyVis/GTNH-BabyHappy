@@ -8,6 +8,7 @@
   "mixins": [
     "ae.MixinQuantumCell",
     "bw.MixinCAL",
+    "bw.MixinVoidMiner",
     "gtpp.MixinElementalDuplicator",
     "gtpp.MixinIndustrialMulti",
     "gtpp.MixinMegaABS"
