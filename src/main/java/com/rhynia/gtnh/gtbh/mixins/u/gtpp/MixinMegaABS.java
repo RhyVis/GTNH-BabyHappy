@@ -1,6 +1,5 @@
 package com.rhynia.gtnh.gtbh.mixins.u.gtpp;
 
-import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Constant;
@@ -20,8 +19,8 @@ public class MixinMegaABS {
      * @since 1.0.0
      */
     @Inject(method = "getCoilDiscount", at = @At("HEAD"), cancellable = true)
-    private void bh$getCoilDiscount(@NotNull HeatingCoilLevel lvl, @NotNull CallbackInfoReturnable<Double> cir) {
-        cir.setReturnValue(1.0 - Math.pow(0.95, lvl.getTier()));
+    private void bh$getCoilDiscount(HeatingCoilLevel lvl, CallbackInfoReturnable<Double> cir) {
+        cir.setReturnValue(1.0 - Math.pow(0.9, lvl.getTier()));
     }
 
     /**
